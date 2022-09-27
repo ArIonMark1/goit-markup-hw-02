@@ -42,17 +42,20 @@
         </li>
       </ul>
     </header>
+    <!-- Основний контент -->
     <main>
       <!-- Шапка основного блоку, фільтрація контенту -->
-      <section>
-        <ul>
+      <section class="content-portfolio">
+        <!-- Список кнопок фільтрації -->
+        <ul class="filtration-button">
           <li><button type="button" class="button">Усі</button></li>
           <li><button type="button" class="button">Веб-сайти</button></li>
           <li><button type="button" class="button">Додатки</button></li>
           <li><button type="button" class="button">Дизайн</button></li>
           <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
-        <ul>
+        <!-- Контент для фільтрації -->
+        <ul class="content-cards">
           <li>
             <img src="./images/technology.png" alt="ноутбук" />
             <h3>Технокряк</h3>
@@ -101,17 +104,25 @@
         </ul>
       </section>
     </main>
+    <!-- Підвал сайту -->
     <footer>
-      <a href="index.html" lang="en" class="logo"><span>Web</span>Studio</a>
-      <address>
+      <a href="index.html" lang="en" class="logo botom-logo"
+        ><span>Web</span>Studio</a
+      >
+      <address class="block-address">
         <ul class="footer-contacts">
-          <li>
+          <!-- потім можливо зробити лінк на геолокацію в гугл картах -->
+          <li class="address">
             <a href="https://goo.gl/maps/BC4n3QJLsoe9X29g8" target="_blank"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contact">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
