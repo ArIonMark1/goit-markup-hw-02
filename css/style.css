@@ -200,6 +200,7 @@ body {
 .content-portfolio {
   text-align: center;
 }
+/* кнопки фільтрації */
 .filtration-button {
   margin: 90px 0 30px;
 }
@@ -210,7 +211,6 @@ body {
 }
 .filtration-button button {
   border-radius: 4px;
-  text-align: center;
   border: none;
   font-style: normal;
   font-weight: 500;
@@ -229,6 +229,15 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+/* контент сторінки портфоліо */
+.content-cards li {
+  display: inline-block;
+  list-style-type: none;
+}
+/* .content-cards img {
+  background: black;
+} */
+
 footer {
   background-color: #2f303a;
   padding: 60px 215px;
