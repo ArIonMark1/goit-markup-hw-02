@@ -13,7 +13,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 215px;
+  /* padding: 25px 215px; */
+  padding: 1.56% 13.45%;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -117,8 +118,8 @@ body {
 }
 /* Стилі послуг компанії */
 .steck-company {
-  text-align: center;
-  margin: 0 215px 90px;
+  /* text-align: center; */
+  margin: 0 215px 95px;
 }
 .steck-company .steck-header {
   font-weight: 700;
@@ -127,19 +128,26 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
-}
-.steck-company .steck-list li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 30px;
-}
-.steck-company .steck-list li:last-child {
-  margin-right: 0;
+  /* margin-bottom: 50px; */
 }
 .steck-company .steck-list {
-  text-align: center;
-  /* gap: 30px; */
+  list-style-type: none;
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: center;
+  justify-content: center;
+}
+.steck-company .steck-list .list-section {
+  /* <li> */
+  max-width: 340px;
+  min-width: 100px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.steck-company .steck-list .list-section img {
+  width: 100%;
 }
 /* Стилі блоку працівників компанії */
 .team-section {
@@ -196,20 +204,19 @@ body {
   cursor: pointer;
 }
 /* контент зі сторінки портфоліо */
-
 .content-portfolio {
-  text-align: center;
+  margin: 100px 215px 80px;
 }
 /* кнопки фільтрації */
 .filtration-button {
-  margin: 90px 0 30px;
+  text-align: center;
 }
 .filtration-button li {
   display: inline-block;
-  margin: 5px;
+  margin: 0 5px;
   list-style-type: none;
 }
-.filtration-button button {
+.filtration-button .button {
   border-radius: 4px;
   border: none;
   font-style: normal;
@@ -222,7 +229,7 @@ body {
   background: #fff;
   padding: 5px 25px;
 }
-.filtration-button button:hover {
+.filtration-button .button:hover {
   color: #fff;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -230,14 +237,44 @@ body {
   border-radius: 4px;
 }
 /* контент сторінки портфоліо */
-.content-cards li {
-  display: inline-block;
+.content-cards {
   list-style-type: none;
-}
-/* .content-cards img {
-  background: black;
-} */
+  margin-top: 35px;
 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.content-cards .card {
+  /* <li> */
+  max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
+  flex-basis: calc((100% - 66px) / 3);
+  background-color: #fff;
+  border: 1px solid #7575751a;
+}
+.content-cards .card img {
+  width: 100%;
+}
+.content-cards .card-header {
+  margin: 20px 25px 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.content-cards .card-content {
+  margin: 0 25px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ##### Footer ##### */
 footer {
   background-color: #2f303a;
   padding: 60px 215px;
