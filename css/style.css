@@ -106,13 +106,11 @@ body {
   gap: 30px;
   list-style-type: none;
   justify-content: center;
-  border: 1px solid red;
 }
 .list-info .info-card {
   width: 270px;
   min-width: 200px;
   flex-basis: calc((100% - 100px) / 4);
-  border: 1px solid forestgreen;
 }
 .list-info .list-header {
   font-weight: 700;
