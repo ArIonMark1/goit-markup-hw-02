@@ -102,10 +102,17 @@ body {
 }
 .list-info {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-}
-.list-info li {
   list-style-type: none;
+  justify-content: center;
+  border: 1px solid red;
+}
+.list-info .info-card {
+  width: 270px;
+  min-width: 200px;
+  flex-basis: calc((100% - 100px) / 4);
+  border: 1px solid forestgreen;
 }
 .list-info .list-header {
   font-weight: 700;
@@ -143,7 +150,7 @@ body {
 .steck-company .steck-list .list-section {
   /* <li> */
   max-width: 340px;
-  min-width: 100px;
+  min-width: 200px;
   flex-basis: calc((100% - 60px) / 3);
 }
 .steck-company .steck-list .list-section img {
@@ -152,9 +159,7 @@ body {
 /* Стилі блоку працівників компанії */
 .team-section {
   background: #f5f4fa;
-  /* background-color: #e7e3ff; */
-  text-align: center;
-  padding: 95px;
+  padding: 90px 215px 100px;
 }
 .team-section .team-header {
   font-weight: 700;
@@ -166,20 +171,18 @@ body {
   margin-bottom: 50px;
 }
 .team-section .team-list {
-  text-align: center;
-}
-.team-section .team-list li {
-  display: inline-block;
-  width: 300px;
-  /* height: 370px; */
-  margin-right: 30px;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.team-section .team-list .worker-card {
+  /* <li> */
+  width: 300px;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 3px 5px 1px grey;
-}
-.team-section .team-list li:last-child {
-  margin-right: 0;
 }
 .team-list-header {
   margin-top: 30px;
