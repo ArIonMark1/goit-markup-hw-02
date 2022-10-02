@@ -9,6 +9,12 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
+hr {
+  border: none;
+  color: #ececec;
+  background-color: #ececec;
+  height: 1px;
+}
 /* стилі сайд бару, лого */
 .header {
   display: flex;
@@ -20,7 +26,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19; /* множником */
+  letter-spacing: 0.03em;
   color: black;
   text-decoration: none;
 }
@@ -53,11 +60,15 @@ body {
 .header .list-navigation a,
 .header .contacts a {
   text-decoration: none;
+  font-weight: 900;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #212121;
   font-weight: 500;
 }
 /* стилі контактів */
 .header .contacts a {
+  /* font-weight: 900; */
   color: #757575;
 }
 /* стилі шапки контенту */
@@ -77,7 +88,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -92,9 +103,10 @@ body {
   border: none;
   letter-spacing: 0.06em;
   color: #fff;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
 }
 /* Стилі особливостей компанії */
 .general-info {
@@ -111,11 +123,12 @@ body {
   width: 270px;
   min-width: 200px;
   flex-basis: calc((100% - 100px) / 4);
+  line-height: 1.72;
 }
 .list-info .list-header {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -129,7 +142,7 @@ body {
 .steck-company .steck-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -161,7 +174,7 @@ body {
 .team-section .team-header {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -185,7 +198,7 @@ body {
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -194,13 +207,14 @@ body {
   margin: 10px 0 30px 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 /* Кнопки головного контенту */
 .button {
+  font-family: "Roboto";
   cursor: pointer;
 }
 /* контент зі сторінки портфоліо */
@@ -210,23 +224,24 @@ body {
 /* кнопки фільтрації */
 .filtration-button {
   text-align: center;
-}
-.filtration-button li {
-  display: inline-block;
-  margin: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
+  gap: 10px;
 }
 .filtration-button .button {
   border-radius: 4px;
   border: none;
+  min-width: 155px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  background: #fff;
+  background: #f5f4fa;
   padding: 5px 25px;
 }
 .filtration-button .button:hover {
@@ -249,6 +264,7 @@ body {
 .content-cards .card {
   /* <li> */
   max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
+  min-width: 300px;
   flex-basis: calc((100% - 66px) / 3);
   background-color: #fff;
   border: 1px solid #7575751a;
@@ -261,7 +277,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -270,7 +286,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -289,26 +305,22 @@ footer {
 .block-address .footer-contacts .address,
 .contact {
   list-style-type: none;
-  line-height: 172%;
+  line-height: 1.72;
 }
 .footer-contacts .address a {
   text-decoration: none;
   color: #fff;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 0.03em;
 }
 .footer-contacts .contact a {
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1324px) {
   .header {
     padding: 4.56% 5.45% 1.4%;
     display: flex;
@@ -344,6 +356,9 @@ footer {
   .team-section {
     background: #f5f4fa;
     padding: 90px 0 100px;
+  }
+  .content-portfolio {
+    margin: 60px 0;
   }
   footer {
     background-color: #2f303a;
